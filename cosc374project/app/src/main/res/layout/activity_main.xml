@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/unencrypted_holder"
+        android:layout_width="match_parent"
+        android:layout_height="67dp"
+        android:layout_margin="20sp">
+
+        <EditText
+            android:id="@+id/unencrypted_contents"
+            android:layout_width="220dp"
+            android:layout_height="66dp"
+            android:layout_weight="2"
+            android:hint="Type Something..." />
+
+        <Button
+            android:id="@+id/encrypt_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="Encrypt" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/nfc_contents"
+        android:layout_width="match_parent"
+        android:layout_height="360dp" />
+
+    <LinearLayout
+        android:id="@+id/button_holder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20sp"
+        android:layout_weight="2">
+
+        <Button
+            android:id="@+id/decrypt_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Decrypt" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/decrypt_contents"
+        android:layout_width="match_parent"
+        android:layout_height="166dp" />
+
+</LinearLayout>
